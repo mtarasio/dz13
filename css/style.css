@@ -16,7 +16,7 @@ a {
    text-decoration: none;
 }
 
-ul {
+header ul {
    list-style: none;
    display: flex;
    margin: 0 auto;
@@ -60,8 +60,36 @@ ul {
 .logo {
    width: 100%;
    max-width: 238px;
+   margin-right: 240px;
    cursor: pointer;
 
+}
+
+.paige {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 80px;
+   align-items: start;
+   background-image: url(../img/bg-picture.svg);
+   background-position-x: right ;
+   background-position-y: 165px;
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+}
+
+.text-container {
+   width: 100%;
+   max-width: 785px;
+   padding-left: 30px;
+   margin-top: 80px;
+}
+
+.sticky {
+   width: 100%;
+   max-width: 385px;
+   position: sticky;
+   top: 10px;
+   padding-top: 80px;
 }
 
 .title {
@@ -70,7 +98,14 @@ ul {
    align-items: center;
    text-align: center;
    margin: 0 auto;
-   padding-bottom: 70px;
+   padding-bottom: 15px;
+   padding-top: 17px;
+   position: fixed;
+   top: 0;
+   z-index: 1;
+   width: 100%;
+   max-width: 1440px;
+   background: #fff;
 }
 
 h2 {
@@ -83,6 +118,17 @@ h2 {
    text-transform: uppercase;
    color: #000000;
    padding-bottom: 40px;
+   position: relative;
+}
+
+.text-container > h2::before {
+   content: '';
+   position: absolute;
+   background-color: black;
+   height: 8px;
+   width: 100px;
+   display: block;
+   top: -20px;
 }
 
 sup {
